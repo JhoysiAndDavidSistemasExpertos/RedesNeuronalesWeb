@@ -7,8 +7,10 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { AboutComponent } from './components/about/about.component';
-
+import { ContributionsComponent } from './components/contributions/contributions.component';
+import { ThemesComponent } from './components/contributions/themes/themes.component';
+import { VideosComponent } from './components/contributions/videos/videos.component';
+import { BooksComponent } from './components/contributions/books/books.component';
 //services
 import { InformacionService } from './services/informacion.service';
 
@@ -18,7 +20,10 @@ import { InformacionService } from './services/informacion.service';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    AboutComponent
+    ContributionsComponent,
+    ThemesComponent,
+    VideosComponent,
+    BooksComponent
   ],
   imports: [
     BrowserModule,
