@@ -7,7 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  public date: number;
+  public email: string;
+
+  constructor() {
+
+    this.date = new Date().getFullYear();
+    this.email = 'davidgjordancbba@gmail.com';
+   }
 
   ngOnInit() {
   }
