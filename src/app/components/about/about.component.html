@@ -2,7 +2,8 @@
       <br>  
       <br>  
       <div class="ae-grid au-xs-ta-center au-mb-4 animated fadeIn" *ngIf="_infoS.equipo">
-
+        <div class="ae-grid__item--alt item-lg-2">
+        </div>
         <div  *ngFor="let miembro of _infoS.equipo" 
             class="ae-grid__item item-lg-4 ae-kappa au-mb-3"><img [src]="miembro.url" alt="" class="au-mb-3">
           <h5 class="ae-u-bolder au-mt-2"> {{ miembro.nombre }} </h5>
@@ -11,7 +12,8 @@
               {{  miembro.frase }}  
           </p><a href="https://twitter.com/?lang=es{{miembro.twitter}}" target="_blank" class="ae-u-bolder au-underline"> {{ miembro.twitter }} </a>
         </div>
-
+        <div class="ae-grid__item--alt item-lg-1">
+        </div>
        
       </div>
 
