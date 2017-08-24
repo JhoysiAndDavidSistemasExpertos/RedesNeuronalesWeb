@@ -1,5 +1,4 @@
 import { Routes } from '@angular/router';
-
 import { BooksComponent, VideosComponent, ThemesComponent } from './index-contributions.pages';
 
 export const CONTRIBUTIONS_ROUTES: Routes = [

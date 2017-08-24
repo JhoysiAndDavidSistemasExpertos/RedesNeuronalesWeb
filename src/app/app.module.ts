@@ -16,6 +16,7 @@ import { AboutComponent } from './components/about/about.component'
 import { InformacionService } from './services/informacion.service';
 //rutas
 import { ROUTING } from './app.routing';
+import { DetailThemeComponent } from './components/detail-theme/detail-theme.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,8 @@ import { ROUTING } from './app.routing';
     ThemesComponent,
     VideosComponent,
     BooksComponent,
-    AboutComponent
+    AboutComponent,
+    DetailThemeComponent
   ],
   imports: [
     BrowserModule,
