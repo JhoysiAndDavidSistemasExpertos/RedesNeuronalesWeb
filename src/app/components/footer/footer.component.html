@@ -4,12 +4,12 @@
   <div class="ae-grid ae-grid--collapse">
     <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-left">
       <ul class="rk-menu rk-footer-menu">
-        <li class="rk-menu__item"><a href="about.html" class="rk-menu__link">About</a>
+        <li class="rk-menu__item"><a [routerLink] = "['about']" class="rk-menu__link">About Us </a>
         </li>
       </ul>
       <p class="rk-footer__text rk-footer__copy ">
          <span class="ae-u-bold">© </span>
-         <span class="ae-u-bolder">{{ date }} Redes Neuronales </span>
+         <span class="ae-u-bolder">{{ date }} {{ infoSer.info.titulo }} </span>
          All Right Reserved.
       </p>
     </div>
@@ -29,22 +29,18 @@
           <use xlink:href="assets/img/symbols.svg#icon-pinterest"></use>
         </svg>
       </a>
-      <a href="#0" class="rk-social-btn ">
-        <svg>
-          <use xlink:href="assets/img/symbols.svg#icon-tumblr"></use>
-        </svg>
-      </a>
+     
     </div>
 
     <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-right">
       <p class="rk-footer__text rk-footer__contact "> 
         <span class="ae-u-bold">Email: </span>
         <span class="ae-u-bolder"> 
-          <a href="#0" class="rk-dark-color ">{{ email }} </a>
+          <a href="#0" class="rk-dark-color ">{{ infoSer.info.email }} </a>
         </span>
       </p>
       <p class="rk-footer__text rk-footer__by">Create by
-         <a href="http://pixeden.com" class="ae-u-bolder">DavidAndJhoysi.</a>
+         <a class="ae-u-bolder">{{ infoSer.info.creado }}</a>
       </p>
     </div>
   </div>

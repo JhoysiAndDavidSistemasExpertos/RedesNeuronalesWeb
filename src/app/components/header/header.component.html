@@ -18,18 +18,18 @@
         <h1 class="rk-logo"><a [routerLink]="['/home']">Redes Neuronales<sup>tm</sup></a></h1>
         <nav class="rk-navigation">
           <ul class="rk-menu">
-            <li class="active rk-menu__item"><a [routerLink]="['home']" class="rk-menu__link">Home</a>
+            <li class="rk-menu__item" routerLinkActive="active"><a  [routerLink]="['home']" class="rk-menu__link">Home</a>
             </li>
-            <li class="rk-menu__item"><a [routerLink]="['contributions']" class="rk-menu__link">Contributions</a>
+            <li class="rk-menu__item" routerLinkActive="active"><a  [routerLink]="['contributions']" class="rk-menu__link">Contributions</a>
               <nav class="rk-menu__sub">
                 <ul class="rk-container">
-                  <li class="rk-menu__item"><a [routerLink]="['contributions/themes']" class="rk-menu__link">Themes</a></li>
-                  <li class="rk-menu__item"><a [routerLink]="['contributions/videos']" class="rk-menu__link">Videos</a></li>
-                  <li class="rk-menu__item"><a [routerLink]="['contributions/books']" class="rk-menu__link">Books</a></li>
+                  <li class="rk-menu__item" routerLinkActive="active"><a  [routerLink]="['contributions/themes']" class="rk-menu__link">Themes</a></li>
+                  <li class="rk-menu__item" routerLinkActive="active"><a  [routerLink]="['contributions/videos']" class="rk-menu__link">Videos</a></li>
+                  <li class="rk-menu__item" routerLinkActive="active"><a  [routerLink]="['contributions/books']" class="rk-menu__link">Books</a></li>
                 </ul>
               </nav>
             </li>
-            <li class="rk-menu__item"><a [routerLink]="['about']" class="rk-menu__link">About</a>
+            <li class="rk-menu__item" routerLinkActive="active"><a  [routerLink]="['about']" class="rk-menu__link">About</a>
             </li>
           </ul>
           <form class="rk-search">
