@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class ThemesComponent implements OnInit {
-
-  constructor() { }
+  constructor() { 
+  }
 
   ngOnInit() {
+    
+  }
+
+  public irADetail(){
   }
 
 }

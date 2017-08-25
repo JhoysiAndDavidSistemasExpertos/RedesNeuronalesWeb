@@ -12,6 +12,7 @@ const APP_ROUTES:Routes =[
     { path: 'home',  component:HomeComponent },
     { path: 'about',  component:AboutComponent },
     { path: 'contributions',  component:ContributionsComponent , children: CONTRIBUTIONS_ROUTES},
+    
     { path: '**', redirectTo:'', pathMatch:'full' }
 ];
 
