@@ -17,6 +17,7 @@ import { InformacionService } from './services/informacion.service';
 //rutas
 import { ROUTING } from './app.routing';
 import { DetailThemeComponent } from './components/detail-theme/detail-theme.component';
+import { VideoPipePipe } from './pipes/video-pipe.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,8 @@ import { DetailThemeComponent } from './components/detail-theme/detail-theme.com
     VideosComponent,
     BooksComponent,
     AboutComponent,
-    DetailThemeComponent
+    DetailThemeComponent,
+    VideoPipePipe
   ],
   imports: [
     BrowserModule,
