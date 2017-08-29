@@ -9,10 +9,10 @@
                     "section2": "Todos los procesos del cuerpo humano se relacionan en alguna u otra forma con la (in)actividad de estas neuronas. Las mismas son un componente relativamente simple del ser humano, pero cuando millares de ellas se conectan en forma conjunta se hacen muy poderosas. Lo que básicamente ocurre en una neurona biológica es lo siguiente: la neurona es estimulada o excitada a través de sus entradas (inputs) y cuando se alcanza un cierto umbral, la neurona se dispara o activa, pasando una señal hacia el axon. Posteriores investigaciones condujeron al descubrimiento de que estos procesos son el resultado de eventos electroquímicos",
                     "section3": "Como ya se sabe, el pensamiento tiene lugar en el cerebro, que  consta  de billones de neuronas interconectadas. Así, el secreto de la “inteligencia” -sin importar como se defina- se sitúa dentro de estas neuronas interconectadas y de su interacción. También, es bien conocido que los humanos son capaces de aprender. Aprendizaje significa que aquellos problemas que inicialmente no pueden resolverse, pueden ser resueltos después de obtener más información acerca del problema. Por lo tanto, las Redes Neuronales",
                     "title": "Acerca de las redes neuronales",
-                    "book":{
+                    "book": {
                         "urlBook": "https://firebasestorage.googleapis.com/v0/b/redesneuroalesweb.appspot.com/o/matich-redesneuronales.pdf?alt=media&token=1dae1f12-fe12-4416-b18f-2f7763d7eef7",
-                        "title":"Acerca de las redes neuronales",
-                        "description":"Acerca de las redes neuronales"
+                        "title": "Acerca de las redes neuronales",
+                        "description": "Acerca de las redes neuronales"
                     },
                     "urlImage1": "http://thumb1.shutterstock.com/photos/display_pic_with_logo/470569/111518420.jpg",
                     "urlImage2": "http://s3.amazonaws.com/bt_assets/system/idea_thumbnails/26570/original/HardwareBrain.jpg?1295388592",
@@ -24,10 +24,10 @@
                     "section2": "Ventajas que ofrecen las red neuronal. Debido a su constitución y a sus fundamentos, las redes neuronales artificiales presentan un gran número de características semejantes a las del cerebro. Por ejemplo, son capaces de aprender de la experiencia, de generalizar de casos anteriores a nuevos casos, de abstraer características esenciales a partir de entradas que representan información irrelevante, etc. Esto hace que ofrezcan numerosas ventajas y que este tipo de tecnología se esté aplicando en múltiples áreas. Entre las ventajas se incluyen: ",
                     "section3": "Aprendizaje Adaptativo. Capacidad de aprender a realizar tareas basadas en un entrenamiento o  en una experiencia inicial. - Auto-organización. Una red neuronal puede crear su propia organización o representación de la información que recibe mediante una etapa de aprendizaje. -Tolerancia a fallos. La destrucción parcial de una red conduce a una degradación de su estructura; sin embargo, algunas capacidades de la red se pueden retener, incluso sufriendo un gran daño. -Operación en tiempo real. Los cómputos neuronales pueden ser realizados en paralelo; para esto se diseñan y fabrican máquinas con hardware especial para obtener esta capacidad. -Fácil inserción dentro de la tecnología existente. Se pueden obtener chips especializados para redes neuronales que mejoran su capacidad en ciertas tareas. Ello facilitará la integración modular en los sistemas existentes. ",
                     "title": "Generalidades de las redes neuronales",
-                    "book":{
+                    "book": {
                         "urlBook": "https://firebasestorage.googleapis.com/v0/b/redesneuroalesweb.appspot.com/o/matich-redesneuronales.pdf?alt=media&token=1dae1f12-fe12-4416-b18f-2f7763d7eef7",
-                        "title":"Generalidades de las redes neuronales",
-                        "description":"Generalidades de las redes neuronales"
+                        "title": "Generalidades de las redes neuronales",
+                        "description": "Generalidades de las redes neuronales"
                     },
                     "urlImage1": "http://2.bp.blogspot.com/-2uLbmebYjWY/TgF03SpIsoI/AAAAAAAAAAw/DC_YpLqvzPE/s1600/cap.jpg",
                     "urlImage2": "https://image.slidesharecdn.com/redesneuronalesartificialessupervisadasynosupervisadas-131107143127-phpapp01/95/redes-neuronales-artificiales-supervisadas-y-no-supervisadas-9-638.jpg?cb=1383834749",
@@ -39,10 +39,10 @@
                     "section2": "-La neurona trata a muchos valores de entrada como si fueran uno solo; esto recibe el nombre de entrada global. Por lo tanto, ahora nos enfrentamos al problema de cómo se pueden combinar estas simples entradas (ini1, ini2, ...) dentro de la entrada global, gini. Esto se logra a través de la función de entrada, la cual se calcula a partir del vector entrada. La función de entrada puede describirse como sigue:inputi =  (ini1• wi1)* (ini2• wi2)*... (inin• win)",
                     "section3": "-Función de activación (activation function). Una neurona biológica puede estar activa (excitada) o inactiva (no excitada); es decir, que tiene un “estado de activación”. Las neuronas artificiales también tienen diferentes estados de activación; algunas de ellas solamente dos, al igual que las biológicas, pero otras pueden tomar cualquier valor dentro de un conjunto determinado. -Función de salida (output function). El último componente que una neurona necesita es la función de salida. El valor resultante de esta función es la salida de la neurona i (outi); por ende, la función de salida determina que valor se transfiere a las neuronas vinculadas. Si la función de activación está por debajo de un umbral determinado, ninguna salida se pasa  a la neurona subsiguiente. Normalmente, no cualquier valor es permitido como una entrada para una neurona, por  lo  tanto,  los valores de salida están comprendidos en el rango  [0, 1] o [-1, 1]. También pueden ser binarios {0, 1} o {-1, 1}. ",
                     "title": "Elementos Básicos - Redes Neuronales",
-                    "book":{
+                    "book": {
                         "urlBook": "https://firebasestorage.googleapis.com/v0/b/redesneuroalesweb.appspot.com/o/matich-redesneuronales.pdf?alt=media&token=1dae1f12-fe12-4416-b18f-2f7763d7eef7",
-                        "title":"Elementos Básicos - Redes Neuronales",
-                        "description":"Elementos Básicos - Redes Neuronales"
+                        "title": "Elementos Básicos - Redes Neuronales",
+                        "description": "Elementos Básicos - Redes Neuronales"
                     },
                     "urlImage1": "http://4.bp.blogspot.com/-4wOcldYx424/Tb3r1tcrCpI/AAAAAAAAAAU/I2V_tS6SNJY/s1600/Imagen1.png",
                     "urlImage2": "https://i2.wp.com/farm4.static.flickr.com/3150/2744938602_60fba5f919.jpg",
@@ -54,10 +54,10 @@
                     "section2": "Se ha visto que los datos de entrada se procesan a través de la red neuronal con  el propósito de lograr una salida. También se dijo que las redes neuronales extraen generalizaciones desde un conjunto determinado de ejemplos anteriores de tales problemas de decisión. Una red neuronal debe aprender a calcular la salida correcta para cada constelación (arreglo o vector) de entrada en el conjunto de ejemplos. Este proceso de aprendizaje se denomina: proceso de entrenamiento o acondicionamiento. El conjunto de datos (o conjunto de ejemplos) sobre el cual este proceso se basa es, por ende, llamado: conjunto de datos de entrenamiento.",
                     "section3": "Si la topología de la red y las diferentes funciones de cada neurona (entrada, activación y salida) no pueden cambiar durante el aprendizaje, mientras que los pesos sobre cada una de las conexiones si pueden hacerlo; el aprendizaje de una red neuronal significa: adaptación de  los pesos. En otras palabras el aprendizaje es el proceso por el cual una red neuronal modifica sus pesos en respuesta a una información de entrada. Los cambios que se producen durante el mismo se reducen a la destrucción, modificación y creación de conexiones entre las neuronas. En los sistemas biológicos existe una continua destrucción y creación de conexiones entre las neuronas. En los modelos de redes neuronales artificiales, la creación de una nueva conexión implica que el peso de la misma pasa a tener un valor distinto de cero. De la misma manera, una conexión se destruye cuando su peso pasa a ser cero. ",
                     "title": "Aprendizaje, Validación y Codificación - Redes neuronales",
-                    "book":{
+                    "book": {
                         "urlBook": "https://firebasestorage.googleapis.com/v0/b/redesneuroalesweb.appspot.com/o/matich-redesneuronales.pdf?alt=media&token=1dae1f12-fe12-4416-b18f-2f7763d7eef7",
-                        "title":"Aprendizaje, Validación y Codificación - Redes neuronales",
-                        "description":"Aprendizaje, Validación y Codificación - Redes neuronales"
+                        "title": "Aprendizaje, Validación y Codificación - Redes neuronales",
+                        "description": "Aprendizaje, Validación y Codificación - Redes neuronales"
                     },
                     "urlImage1": "http://ceres.ugr.es/~alumnos/esclas/imagenes/index_img_4.jpg",
                     "urlImage2": "https://image.slidesharecdn.com/redesneuronales-140809151648-phpapp01/95/redes-neuronales-12-638.jpg?cb=1407597725",
@@ -69,10 +69,10 @@
                     "section2": "Redes monocapa. En las redes monocapa, se establecen conexiones entre las neuronas que pertenecen a la única capa que constituye la red. Las redes monocapas se utilizan generalmente en tareas relacionadas con lo que se conoce como autoasociación (regenerar información de entrada que se presenta a la red de forma incompleta o distorsionada). ",
                     "section3": "- Redes multicapa Las redes multicapas son aquellas que disponen de un conjunto de neuronas agrupadas en varios (2, 3, etc.) niveles o capas. En estos casos, una forma para  distinguir la capa a la que pertenece una neurona, consistiría en fijarse en el origen de  las señales que recibe a la entrada y el destino de la señal de salida. Normalmente,   todas las neuronas de una capa reciben señales de entrada desde otra capa anterior (la cual está más cerca a la entrada de la red), y envían señales de salida a una capa posterior (que está más cerca a la salida de la red). A estas conexiones se las denomina conexiones hacia adelante o feedforward. ",
                     "title": "Rrincipales Topologias - Redes Neuronales",
-                    "book":{
+                    "book": {
                         "urlBook": "https://firebasestorage.googleapis.com/v0/b/redesneuroalesweb.appspot.com/o/matich-redesneuronales.pdf?alt=media&token=1dae1f12-fe12-4416-b18f-2f7763d7eef7",
-                        "title":"Rrincipales Topologias - Redes Neuronales",
-                        "description":"Rrincipales Topologias - Redes Neuronales"
+                        "title": "Rrincipales Topologias - Redes Neuronales",
+                        "description": "Rrincipales Topologias - Redes Neuronales"
                     },
                     "urlImage1": "http://rtdibermatica.com/wp-content/uploads/2011/11/n11.jpg",
                     "urlImage2": "http://1.bp.blogspot.com/-vsCUZ08qX6Q/VVkXwbvXPQI/AAAAAAAAAAw/CDzZfJMTQdY/s1600/red%2Bneuronal.jpg",
@@ -84,10 +84,10 @@
                     "section2": "-Casos concretos de aplicación. A continuación se detallan los siguientes casos concretos de aplicación de redes neuronales:",
                     "section3": "Planificación del staff (cuerpo) de empleados. Hoy más que nunca, las empresas están sujetas a la presión de los elevados costos. Esto puede verse en diferentes sectores corporativos, tales como la planificación del staff de empleados. Desde el punto de vista de las empresas, un empleado que falla al ejecutar la mayor parte de las tareas asignadas, evidencia una baja productividad. Por el otro lado, esta situación es frustrante para el empleado. Ambos efectos causan costos, los cuales podrían evitarse realizando antes una prueba de aptitud. Estos problemas no solamente son originados por los empleados nuevos, sino también por aquellos que son reubicados dentro de la misma empresa. Planificación de la demanda de materiales. La tarea de planificar la demanda de materiales es justamente predecir en forma segura la necesidad de los mismos, o más exactamente, de los factores de consumo.  Esto involucra tener una correcta información de los volúmenes aproximados de producción, así como de los factores de tiempo. Principalmente para resolver esta tarea pueden distinguirse los siguientes procedimientos: -Programación orientada (program-oriented). -Consumo orientado (consumption-oriented). Puntuación para la solicitud de un crédito. La puntuación para un crédito representa una tarea de gran riesgo para las instituciones crediticias. Estas instituciones tienen un fuerte interés en evitar tales situaciones, rechazando los candidatos que parecen ser un riesgo malo. Ya que un candidato rechazado, que de hecho era un buen riesgo crediticio, no impone costos reales; mientras que, un candidato que es incapaz de restituir el pago del crédito extendido puede causar pérdidas sustanciales (recordar el caso Schneider en Alemania). ",
                     "title": "Aplicaciones - Redes neuronales",
-                    "book":{
+                    "book": {
                         "urlBook": "url book ",
-                        "title":"Aplicaciones - Redes neuronales",
-                        "description":"Aplicaciones - Redes neuronales"
+                        "title": "Aplicaciones - Redes neuronales",
+                        "description": "Aplicaciones - Redes neuronales"
                     },
                     "urlImage1": "https://redesneuronales1.files.wordpress.com/2014/01/emociones-reconocimiento-facial.jpeg",
                     "urlImage2": "https://www.universal-robots.com/media/1110300/2-collaborative-robots-working-in-tandem-at-task-force-tip-universal-robots.jpg",
@@ -99,91 +99,21 @@
                     "section2": "section2 text",
                     "section3": "section 3 text",
                     "title": "Article 1",
-                    "book":{
+                    "book": {
                         "urlBook": "url book ",
-                        "title":"Article 1",
-                        "description":"Article 1"
+                        "title": "Article 1",
+                        "description": "Article 1"
                     },
                     "urlImage1": "url image uno",
                     "urlImage2": "url image dos",
                     "urlVideo": "url video 1"
                 }
-                
             ],
             "title": "Redes Neuronales: Conceptos Básicos y Aplicaciones"
-        }
-    
-    ],
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// -------- Segundo Tema
-    "themes": [
+        },
+        // --------------------
+        //------SEGUNDO TEMA
+        // --------------------        
         "-KjJDyB0tJyiYNXyB222",
         {
             "articles": [
@@ -193,11 +123,11 @@
                     "section2": "El cerebro humano corresponde al de un sistema altamente complejo, no-lineal y paralelo es decir que puede realizar muchas operaciones simultáneamente a diferencia de los computadores comunes que son de tipo secuencial, o sea, realizan sólo una operación a la vez.",
                     "section3": "Debido a estas características y muchas otras, las neuroredes se han  convertido  en  una gran ayuda en el  procesamiento  de  datos  experimentales de comportamiento complejo. Además, su comportamiento iterativo no lineal las une de modo natural al caos y teorías de la complejidad. De hecho, las posibilidades son tan amplias que se empieza a hablar de un nuevo campo, aparte de la Biología, la Matemática y la Física: las Neurociencias. Como ya lo dijimos, lo que se desea inicialmente es imitar, al menos parcialmente, el funcionamiento del cerebro.",
                     "title": "Introducción",
-                    "book":{ 
+                    "book": {
                         "urlBook": "https://firebasestorage.googleapis.com/v0/b/redesneuroalesweb.appspot.com/o/Ch-csaavedra.pdf?alt=media&token=1fe2a88b-6e3a-4e8a-968d-c5e2deb50040",
-                        "title":"Introducción",
-                        "description":"Introducción"
-                    }, 
+                        "title": "Introducción",
+                        "description": "Introducción"
+                    },
                     "urlImage1": "http://ciberconta.unizar.es/leccion/redes/DIBUJOS/555.GIF",
                     "urlImage2": "http://1.bp.blogspot.com/-oR5s1joJCCs/UxMcEkO3MeI/AAAAAAAADKs/3Dka7P1X5gU/s1600/neurona2.PNG",
                     "urlVideo": "6Q9nZM30IBE"
@@ -208,11 +138,11 @@
                     "section2": "La mayoría de las neuronas codifican sus salidas como una serie de breves pulsos periódicos, llamados potenciales de acción,  que se originan cercanos al soma de la célula y   se propagan a través del axón. Luego, este pulso llega a las sinapsis y de ahí a las dendritas de la neurona siguiente.",
                     "section3": "Una sinapsis es una interconexión entre dos neuronas, un dibujo esquemático de ella se incluye en la figura 2. En ella, el botón sináptico corresponde al término del axón de una neurona pre-sináptica, y la dendrita es la correspondiente a una neurona post-sináptica.",
                     "title": "Neurobiología",
-                    "book":{ 
+                    "book": {
                         "urlBook": "https://firebasestorage.googleapis.com/v0/b/redesneuroalesweb.appspot.com/o/Ch-csaavedra.pdf?alt=media&token=1fe2a88b-6e3a-4e8a-968d-c5e2deb50040",
-                        "title":"Neurobiología",
-                        "description":"Neurobiología"
-                    }, 
+                        "title": "Neurobiología",
+                        "description": "Neurobiología"
+                    },
                     "urlImage1": "https://www.pabloyglesias.com/wp-content/uploads/2017/02/neurobiologia-1200x586.jpg",
                     "urlImage2": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Neurona.svg/1200px-Neurona.svg.png",
                     "urlVideo": "sK34AgkV644"
@@ -223,11 +153,11 @@
                     "section2": "Tenemos un esquema de neurona, en él nuestra neurona de interés es la yj . Las n neuronas xi están enviando señales de entradas, que son los valores numéricos de “algo”. Los valores wj i representan los pesos sinápticos en las dendritas de yj . Obsérvese la notación: el primer índice denota a la neurona hacia donde se dirige la información, el segundo índice denota de qué neurona procede la información.",
                     "section3": "Lo que hace cada peso sináptico es simplemente  multiplicar a su entrada correspondiente y define la importancia relativa de cada entrada. Recordemos que en el soma de la neurona biológica se sumaban las entradas provenientes de todas las dendritas.",
                     "title": "Modelo Neuronal",
-                    "book":{ 
+                    "book": {
                         "urlBook": "https://firebasestorage.googleapis.com/v0/b/redesneuroalesweb.appspot.com/o/Ch-csaavedra.pdf?alt=media&token=1fe2a88b-6e3a-4e8a-968d-c5e2deb50040",
-                        "title":"Modelo Neuronal",
-                        "description":"Modelo Neuronal"
-                    }, 
+                        "title": "Modelo Neuronal",
+                        "description": "Modelo Neuronal"
+                    },
                     "urlImage1": "https://gruporedesneuronales.files.wordpress.com/2010/05/pppp.png",
                     "urlImage2": "http://upload.wikimedia.org/wikipedia/commons/thumb/6/64/RedNeuronalArtificial.png/400px-RedNeuronalArtificial.png",
                     "urlVideo": "8gQ1FX1snlw"
@@ -238,19 +168,20 @@
                     "section2": "De hecho, las neuronas de la mayor parte de los seres vivos con sistema nervioso, desde un caracol hasta el hombre son esencialmente iguales. Lo que nos hace más inteligentes que un caracol es el número, organización y modo de cambio de las conexiones sinápticas.",
                     "section3": "El aprendizaje se divide principalmente en dos tipos: Aprendizaje con Profesor o Supervisado y sin Profesor o No Supervisado. Nosotros sólo estudiaremos aprendizaje con profesor y algunas variantes de éste.",
                     "title": "Aprendizaje o entretenimiento Neuronal",
-                    "book":{ 
+                    "book": {
                         "urlBook": "https://firebasestorage.googleapis.com/v0/b/redesneuroalesweb.appspot.com/o/Ch-csaavedra.pdf?alt=media&token=1fe2a88b-6e3a-4e8a-968d-c5e2deb50040",
-                        "title":"Aprendizaje o entretenimiento Neuronal",
-                        "description":"Aprendizaje o entretenimiento Neuronal"
-                    }, 
+                        "title": "Aprendizaje o entretenimiento Neuronal",
+                        "description": "Aprendizaje o entretenimiento Neuronal"
+                    },
                     "urlImage1": "http://2.bp.blogspot.com/-19YAORvP-Us/Vk4e_iS7GNI/AAAAAAAAACQ/lLWItzIhQp0/s1600-r/6e504j7t.png",
                     "urlImage2": "http://2.bp.blogspot.com/_rA5gQI4magc/TPa4luMTxpI/AAAAAAAACRI/e4lDpuIeopw/s1600/20071202212115-3-funcionamiento-neuronal.jpg",
                     "urlVideo": "UXbYhZL_W6w"
                 }
-                
             ],
             "title": "Redes Neuronales"
         }
-    
+        // --------------------
+        //------TERCER TEMA
+        // -------------------- 
     ]
 }
