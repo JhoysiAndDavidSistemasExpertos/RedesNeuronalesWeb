@@ -113,5 +113,144 @@
             "title": "Redes Neuronales: Conceptos Básicos y Aplicaciones"
         }
     
+    ],
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// -------- Segundo Tema
+    "themes": [
+        "-KjJDyB0tJyiYNXyB222",
+        {
+            "articles": [
+                "-KjJDyB0t11yagyB01",
+                {
+                    "section1": "Las actividades de investigación desarrolladas en torno al estudio de redes neuronales artificiales, simplemente redes neuronales o neuroredes, están motivadas en modelar la forma de procesamiento de la información en sistemas nerviosos biológicos.",
+                    "section2": "El cerebro humano corresponde al de un sistema altamente complejo, no-lineal y paralelo es decir que puede realizar muchas operaciones simultáneamente a diferencia de los computadores comunes que son de tipo secuencial, o sea, realizan sólo una operación a la vez.",
+                    "section3": "Debido a estas características y muchas otras, las neuroredes se han  convertido  en  una gran ayuda en el  procesamiento  de  datos  experimentales de comportamiento complejo. Además, su comportamiento iterativo no lineal las une de modo natural al caos y teorías de la complejidad. De hecho, las posibilidades son tan amplias que se empieza a hablar de un nuevo campo, aparte de la Biología, la Matemática y la Física: las Neurociencias. Como ya lo dijimos, lo que se desea inicialmente es imitar, al menos parcialmente, el funcionamiento del cerebro.",
+                    "title": "Introducción",
+                    "book":{ 
+                        "urlBook": "https://firebasestorage.googleapis.com/v0/b/redesneuroalesweb.appspot.com/o/Ch-csaavedra.pdf?alt=media&token=1fe2a88b-6e3a-4e8a-968d-c5e2deb50040",
+                        "title":"Introducción",
+                        "description":"Introducción"
+                    }, 
+                    "urlImage1": "http://ciberconta.unizar.es/leccion/redes/DIBUJOS/555.GIF",
+                    "urlImage2": "http://1.bp.blogspot.com/-oR5s1joJCCs/UxMcEkO3MeI/AAAAAAAADKs/3Dka7P1X5gU/s1600/neurona2.PNG",
+                    "urlVideo": "6Q9nZM30IBE"
+                },
+                "-KjJDyB0tJyagy2202",
+                {
+                    "section1": "Una neurona típica posee el aspecto y las partes que se muestran en la figura 1. Sin embargo, debemos observar que el dibujo no está a escala, el axón alcanza un largo típico de centímetros y a veces de varios metros, las dendritas también y las terminales sinápticas, son más largas, numerosas y tupidas.",
+                    "section2": "La mayoría de las neuronas codifican sus salidas como una serie de breves pulsos periódicos, llamados potenciales de acción,  que se originan cercanos al soma de la célula y   se propagan a través del axón. Luego, este pulso llega a las sinapsis y de ahí a las dendritas de la neurona siguiente.",
+                    "section3": "Una sinapsis es una interconexión entre dos neuronas, un dibujo esquemático de ella se incluye en la figura 2. En ella, el botón sináptico corresponde al término del axón de una neurona pre-sináptica, y la dendrita es la correspondiente a una neurona post-sináptica.",
+                    "title": "Neurobiología",
+                    "book":{ 
+                        "urlBook": "https://firebasestorage.googleapis.com/v0/b/redesneuroalesweb.appspot.com/o/Ch-csaavedra.pdf?alt=media&token=1fe2a88b-6e3a-4e8a-968d-c5e2deb50040",
+                        "title":"Neurobiología",
+                        "description":"Neurobiología"
+                    }, 
+                    "urlImage1": "https://www.pabloyglesias.com/wp-content/uploads/2017/02/neurobiologia-1200x586.jpg",
+                    "urlImage2": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Neurona.svg/1200px-Neurona.svg.png",
+                    "urlVideo": "sK34AgkV644"
+                },
+                "-KjJDyB0tJyagy2203",
+                {
+                    "section1": "Aquí se desea introducir un  modelo  sencillo  de  la  neurona, para construir redes, nuestro fin último es modelar correctamente el comportamiento global de toda la red. No se pretende modelar exactamente el comportamiento fisiológico de la neurona, sino más bien sólo sus características más relevantes, que entran en juego en su interacción con toda la red.",
+                    "section2": "Tenemos un esquema de neurona, en él nuestra neurona de interés es la yj . Las n neuronas xi están enviando señales de entradas, que son los valores numéricos de “algo”. Los valores wj i representan los pesos sinápticos en las dendritas de yj . Obsérvese la notación: el primer índice denota a la neurona hacia donde se dirige la información, el segundo índice denota de qué neurona procede la información.",
+                    "section3": "Lo que hace cada peso sináptico es simplemente  multiplicar a su entrada correspondiente y define la importancia relativa de cada entrada. Recordemos que en el soma de la neurona biológica se sumaban las entradas provenientes de todas las dendritas.",
+                    "title": "Modelo Neuronal",
+                    "book":{ 
+                        "urlBook": "https://firebasestorage.googleapis.com/v0/b/redesneuroalesweb.appspot.com/o/Ch-csaavedra.pdf?alt=media&token=1fe2a88b-6e3a-4e8a-968d-c5e2deb50040",
+                        "title":"Modelo Neuronal",
+                        "description":"Modelo Neuronal"
+                    }, 
+                    "urlImage1": "https://gruporedesneuronales.files.wordpress.com/2010/05/pppp.png",
+                    "urlImage2": "http://upload.wikimedia.org/wikipedia/commons/thumb/6/64/RedNeuronalArtificial.png/400px-RedNeuronalArtificial.png",
+                    "urlVideo": "8gQ1FX1snlw"
+                },
+                "-KjJDyB0tJyagy2204",
+                {
+                    "section1": "El aprendizaje es la clave de la plasticidad de una neurored   y esencialmente es el proceso en el que se adaptan las sinapsis, para que la red responda de un modo distinto a los estímulos del medio. Recordemos que en una neurored, toda la información adquirida se guarda en el valor de cada peso sináptico.",
+                    "section2": "De hecho, las neuronas de la mayor parte de los seres vivos con sistema nervioso, desde un caracol hasta el hombre son esencialmente iguales. Lo que nos hace más inteligentes que un caracol es el número, organización y modo de cambio de las conexiones sinápticas.",
+                    "section3": "El aprendizaje se divide principalmente en dos tipos: Aprendizaje con Profesor o Supervisado y sin Profesor o No Supervisado. Nosotros sólo estudiaremos aprendizaje con profesor y algunas variantes de éste.",
+                    "title": "Aprendizaje o entretenimiento Neuronal",
+                    "book":{ 
+                        "urlBook": "https://firebasestorage.googleapis.com/v0/b/redesneuroalesweb.appspot.com/o/Ch-csaavedra.pdf?alt=media&token=1fe2a88b-6e3a-4e8a-968d-c5e2deb50040",
+                        "title":"Aprendizaje o entretenimiento Neuronal",
+                        "description":"Aprendizaje o entretenimiento Neuronal"
+                    }, 
+                    "urlImage1": "http://2.bp.blogspot.com/-19YAORvP-Us/Vk4e_iS7GNI/AAAAAAAAACQ/lLWItzIhQp0/s1600-r/6e504j7t.png",
+                    "urlImage2": "http://2.bp.blogspot.com/_rA5gQI4magc/TPa4luMTxpI/AAAAAAAACRI/e4lDpuIeopw/s1600/20071202212115-3-funcionamiento-neuronal.jpg",
+                    "urlVideo": "UXbYhZL_W6w"
+                }
+                
+            ],
+            "title": "Redes Neuronales"
+        }
+    
     ]
 }
