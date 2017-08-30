@@ -68,11 +68,11 @@
                     "section1": "La topología o arquitectura de una red neuronal consiste en la organización y disposición de las neuronas en la misma, formando capas o agrupaciones de neuronas más o menos alejadas de la entrada y salida de dicha red. En este sentido, los parámetros fundamentales de la red son: el número de capas, el número de neuronas por capa, el grado de conectividad y el tipo de conexiones entre neuronas.",
                     "section2": "Redes monocapa. En las redes monocapa, se establecen conexiones entre las neuronas que pertenecen a la única capa que constituye la red. Las redes monocapas se utilizan generalmente en tareas relacionadas con lo que se conoce como autoasociación (regenerar información de entrada que se presenta a la red de forma incompleta o distorsionada). ",
                     "section3": "- Redes multicapa Las redes multicapas son aquellas que disponen de un conjunto de neuronas agrupadas en varios (2, 3, etc.) niveles o capas. En estos casos, una forma para  distinguir la capa a la que pertenece una neurona, consistiría en fijarse en el origen de  las señales que recibe a la entrada y el destino de la señal de salida. Normalmente,   todas las neuronas de una capa reciben señales de entrada desde otra capa anterior (la cual está más cerca a la entrada de la red), y envían señales de salida a una capa posterior (que está más cerca a la salida de la red). A estas conexiones se las denomina conexiones hacia adelante o feedforward. ",
-                    "title": "Rrincipales Topologias - Redes Neuronales",
+                    "title": "Principales Topologias - Redes Neuronales",
                     "book": {
                         "urlBook": "https://firebasestorage.googleapis.com/v0/b/redesneuroalesweb.appspot.com/o/matich-redesneuronales.pdf?alt=media&token=1dae1f12-fe12-4416-b18f-2f7763d7eef7",
-                        "title": "Rrincipales Topologias - Redes Neuronales",
-                        "description": "Rrincipales Topologias - Redes Neuronales"
+                        "title": "Principales Topologias - Redes Neuronales",
+                        "description": "Principales Topologias - Redes Neuronales"
                     },
                     "urlImage1": "http://rtdibermatica.com/wp-content/uploads/2011/11/n11.jpg",
                     "urlImage2": "http://1.bp.blogspot.com/-vsCUZ08qX6Q/VVkXwbvXPQI/AAAAAAAAAAw/CDzZfJMTQdY/s1600/red%2Bneuronal.jpg",
@@ -179,9 +179,60 @@
                 }
             ],
             "title": "Redes Neuronales"
-        }
+        },
         // --------------------
         //------TERCER TEMA
         // -------------------- 
+        "-KjJDyB0tJyiYNXyB222",
+        {
+            "articles": [
+                "-KjJDyB0t33yagyB01",
+                {
+                    "section1": "En nuestro sistema nervioso existen células llamadas neuronas que son una unidad de procesamiento que recibe un estímulo eléctrico de otras neuronas principalmente a través de su árbol dendrítico. El estímulo eléctrico recibido al pasar de un cierto umbral causa que la neurona a su vez envié una señal eléctrica a través de su axón a otras sucesivas neuronas.",
+                    "section2": "-Sinapsis. Cuando el árbol dendrítico recibe impulsos eléctricos sobre un umbral voltaje especifico la neurona manda una señal eléctrica a través del axon a los terminales axonicos. En esos terminales se conectan los terminales axonicos (a través de sinapsis) a otras neuronas. Los terminales axonicos se pueden conectar a través de sinapsis a diferentes partes de la neurona pero típicamente se considera solo la conexión a otras dendritas.",
+                    "section3": "-Neuronas Temporales. Las neuronas tienen un tiempo de activación del orden de milisegundos comparado con nanosegundos para hardware computacional. El cerebro humano tiene alrededor de 1011 neuronas con un promedio de 104 conexiones cada una. Todas las señales de input de otras neuronas se suman de manera espaciotemporal por la neurona.",
+                    "title": "Introducción a las Neuronas",
+                    "book": {
+                        "urlBook": "https://firebasestorage.googleapis.com/v0/b/redesneuroalesweb.appspot.com/o/Introduccion%20a%20las%20redes%20neuronales.pdf?alt=media&token=f586384c-daf4-4a67-8e95-6eb4bd1fb8de",
+                        "title": "Introducción a las redes neuronales artificiales",
+                        "description": "Introducción a las redes neuronales artificiales"
+                    },
+                    "urlImage1": "https://3.bp.blogspot.com/-HtpfOOnPR0c/WW7jNK2bOiI/AAAAAAAAAas/yMcxin1OCEMVtKuuPCGstbJ9q8swqMaEQCLcBGAs/s400/Plasticidadneuronal_zps3b279a1a.png",
+                    "urlImage2": "http://cuadrocomparativo.org/wp-content/uploads/2015/11/neuronaMorfologia-de-la-neurona.jpg",
+                    "urlVideo": "jaEIv_E29sk"
+                },
+                "-KjJDyB0tJyagy3302",
+                {
+                    "section1": "Las ANNs son un modelo basado en los complejos sistemas nerviosos de los animales y seres humanos con su gran cantidad de interconexiones y paralelismo. Los comportamientos inteligentes de estos son una propiedad emergente del gran número de unidades no un resultado de reglas simbólicas o algoritmos.",
+                    "section2": "Las características previamente expuestas de las neuronas se duplican para crear redes de neuronas artificiales que tienen capacidades similares de procesar información en forma paralela. Algunas capacidades de las redes neuronales son: Aprendizaje, Clasificación, Almacenaje de información, Interpolarización, Adaptación.",
+                    "section3": "Las redes neuronales artificiales recrean o modelan las características de las neuronas ya mencionadas en sistemas computacionales de software y hardware. Usan grupos de muchas neuronas artificiales (como la neurona McCulloch-Pitts o MP). Usan principios de computación colectiva y descentralizada (paralela) y son capaces de aprender.",
+                    "title": "Introducción a las redes neuronales artificiales (ANN)",
+                    "book": {
+                        "urlBook": "https://firebasestorage.googleapis.com/v0/b/redesneuroalesweb.appspot.com/o/Introduccion%20a%20las%20redes%20neuronales.pdf?alt=media&token=f586384c-daf4-4a67-8e95-6eb4bd1fb8de",
+                        "title": "Introducción a las redes neuronales artificiales",
+                        "description": "Introducción a las redes neuronales artificiales"
+                    },
+                    "urlImage1": "http://www.itworld.com.bd/wp-content/itworldimages/2016/02/1398654612801.jpg",
+                    "urlImage2": "http://1.bp.blogspot.com/-6sMoIec-lYI/Vj-28V7UILI/AAAAAAAAAHE/GaVG-XGpEHA/s1600/index_img_4.jpg",
+                    "urlVideo": "Es7HAzFsW1M"
+                },
+                "-KjJDyB0tJyagy3303",
+                {
+                    "section1": "-Algoritmos de Aprendizaje. El proceso de aprendizaje es el proceso por el cual la red neuronal se adapta al estímulo modificando sus pesos y eventualmente produce un resultado esperado. Hay dos tipos de aprendizaje: supervisado y sin supervisión. Aprendizaje supervisado incluye un supervisor (o teacher) que le indica a la red cuan cerca está de aprender y va modificando los pesos neuronales. Sin supervisión solamente se forman grupos de clasificación de acuerdo a indicaciones o propiedades, no se calcula un error (E).",
+                    "section2": "-Espacio de Búsqueda de Pesos como Minimización. El espacio de búsqueda es el set de pesos w y un umbral. Objetivo es minimizar el error de clasificación del conjunto de entrenamiento. Esta basado en la idea de que el gradiente de una función escalar F(w) es un vector que apunta en la dirección del mayor incremento de F con magnitud dada por la mayor tasa de cambio de F.",
+                    "section3": "-Backpropagation. Método usado para el aprendizaje de redes de múltiples capas. Este es un algoritmo muy usado en redes neuronales de aprendizaje supervisado, la idea es modificar los pesos basado en el derivado del Error. La función total de Error se define como la suma de las diferencias al cuadrado medio para todos los patrones presentados.",
+                    "title": "Introducción a algunos algoritmos de aprendizaje de las ANNs",
+                    "book": {
+                        "urlBook": "https://firebasestorage.googleapis.com/v0/b/redesneuroalesweb.appspot.com/o/Introduccion%20a%20las%20redes%20neuronales.pdf?alt=media&token=f586384c-daf4-4a67-8e95-6eb4bd1fb8de",
+                        "title": "Introducción a algunos algoritmos de aprendizaje de las ANNs",
+                        "description": "Introducción a algunos algoritmos de aprendizaje de las ANNs"
+                    },
+                    "urlImage1": "https://blog.hrn.io/uploads/avatar/p014t0gj.jpg",
+                    "urlImage2": "http://electronica.com.mx/neural/informacion/backpropagation.gif",
+                    "urlVideo": "sOTOsYwiYSw"
+                }
+            ],
+            "title": "Introducción a las Redes Neuronales Artificiales"
+        }
     ]
 }
