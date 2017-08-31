@@ -4,7 +4,7 @@ import { Http } from '@angular/http';
 @Injectable()
 export class ContributionsService {
 
-    themes:any[]=[];
+    themes:any[];
 
     constructor(private http:Http) { 
         this.getSobreNosotros();
