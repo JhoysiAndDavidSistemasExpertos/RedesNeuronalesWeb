@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer} from '@angular/platform-browser'
-
+import { ContributionsService } from '../../../services/contributions.service';
 
 @Component({
   selector: 'app-books',
@@ -8,12 +8,13 @@ import { DomSanitizer} from '@angular/platform-browser'
   styles: []
 })
 export class BooksComponent implements OnInit {
-public urlImage:string;
-  constructor(private _sanitizer:DomSanitizer) {  
-    this.urlImage = "assets/img/project-2.jpg"   ;
+// public urlImage:string;
+  constructor(private _sanitizer:DomSanitizer, public _contributionsS:ContributionsService) {  
+    // this.urlImage = "assets/img/project-2.jpg"   ;
   }
 
   ngOnInit() {
+    this._contributionsS.getBooks();
   }
 
 
