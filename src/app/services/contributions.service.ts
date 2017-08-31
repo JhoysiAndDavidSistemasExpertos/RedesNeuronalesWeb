@@ -6,6 +6,7 @@ export class ContributionsService {
 
     public themes:any[];
     public books:any[];
+    public book:any;
 
     constructor(private http:Http) { 
         this.getThemes();
@@ -25,6 +26,18 @@ export class ContributionsService {
         this.http.get("https://redesneuroalesweb.firebaseio.com/books.json").subscribe( 
           (data) =>{
             this.books = data.json();
+            console.log("data.Books");
+            console.log(data.json());
+          }
+        );
+      }
+      
+      public getBook(idBook:number){
+        
+        this.http.get(`https://redesneuroalesweb.firebaseio.com/books/${idBook}.json`).subscribe( 
+          (data) =>{
+            this.book = data.json();
+            console.log("data.Book");
             console.log(data.json());
           }
         );

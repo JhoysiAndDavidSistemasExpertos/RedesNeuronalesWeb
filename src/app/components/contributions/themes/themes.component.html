@@ -2,15 +2,15 @@
 
 <section class="ae-container-fluid ae-container-fluid--inner rk-portfolio">
     
-  <div class="rk-portfolio__items" *ngFor="let theme of _contriSer.themes">
+  <div class="rk-portfolio__items" *ngFor="let theme of _contriSer.themes; let idTheme = index">
 <br>
     <h2>{{ theme.title | uppercase }}</h2>
     <br>
     <hr>
-    <a *ngFor="let article of theme.articles"
-     [routerLink]="['/contributions/themes/detail-theme',1]" [style.background-image]="sanitizeImage(article.urlImage1)" class="rk-item rk-item--flex rk-size-4 rk-tosize-3 rk-square ">
+    <a *ngFor="let article of theme.articles; let idArticle = index"
+     [routerLink]="['/contributions/themes/detail-theme',idTheme,idArticle]" [style.background-image]="sanitizeImage(article.urlImage1)" class="rk-item rk-item--flex rk-size-4 rk-tosize-3 rk-square ">
       <div class="item-meta">
-        <h2>{{ article.title }}</h2>
+        <h1>{{ article.title }}</h1>
       </div>
     </a>
 

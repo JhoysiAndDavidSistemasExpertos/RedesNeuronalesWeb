@@ -7,7 +7,7 @@ import { DetailThemeComponent } from '../detail-theme/detail-theme.component';
 export const CONTRIBUTIONS_ROUTES: Routes = [
 
     { path: 'themes', component: ThemesComponent},
-    { path: 'themes/detail-theme/:id', component: DetailThemeComponent},
+    { path: 'themes/detail-theme/:idTheme/:idArticle', component: DetailThemeComponent},
     { path: 'videos', component: VideosComponent },
     { path: 'books', component: BooksComponent },
     //ruta detalle theme

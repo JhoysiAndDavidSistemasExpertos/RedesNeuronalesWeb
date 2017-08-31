@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { InformacionService } from '../../services/informacion.service';
+import { ContributionsService } from '../../services/contributions.service';
+import { DomSanitizer } from '@angular/platform-browser'
+
 
 @Component({
   selector: 'app-detail-theme',
@@ -8,14 +11,23 @@ import { InformacionService } from '../../services/informacion.service';
   styles: []
 })
 export class DetailThemeComponent implements OnInit {
-
-  constructor(private activaR:ActivatedRoute, public infoSer:InformacionService) { }
+  public article: any;
+  constructor(private activaR: ActivatedRoute, public infoSer: InformacionService, public _contributionsS: ContributionsService,private _sanitizer:DomSanitizer) { }
 
   ngOnInit() {
-    this.activaR.params.forEach( param =>{
-      console.log(param);
-      console.log(param['id']);
-    } );
+    this.activaR.params.forEach(param => {
+      //recivimos los dos parametros
+      console.log(param['idTheme']);
+      console.log(param['idArticle']);
+      let idTheme: number = param['idTheme'];
+      let idArticle: number = param['idArticle'];
+      this.article = this._contributionsS.themes[idTheme].articles[idArticle];
+      console.log("param['idArticle']");
+      console.log(this.article);
+      this._contributionsS.getBook(this.article.book.urlBook);
+    });
   }
-
+  public sanitizeImage(image: string) {
+    return this._sanitizer.bypassSecurityTrustStyle(`url(${image})`);
+  }
 }

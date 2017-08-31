@@ -14,7 +14,11 @@ export class BooksComponent implements OnInit {
   }
 
   ngOnInit() {
-    this._contributionsS.getBooks();
+    if(this._contributionsS.books == undefined){
+
+      this._contributionsS.getBooks();
+    }
+    // console.log(this._contributionsS.books);
   }
 
 

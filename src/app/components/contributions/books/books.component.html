@@ -10,7 +10,7 @@
               [style.background-image]="sanitizeImage(book.urlImage)"   
               class="rk-item rk-item--flex rk-size-4 rk-tosize-3 rk-square ">
             
-            <h2> {{ book.title }} </h2>
+            <h1 style=text-align:center> {{ book.title }} </h1>
             <div class="item-meta">
               <h2>Detail Book</h2>
               <p>
@@ -21,7 +21,7 @@
               <br>
               <br>
               <h2>Download</h2>
-              <a [href]="book.urlBook" download="Book Download Documentation.pdf"> <h2> Download Book Desde Firebase</h2></a>
+              <a [href]="book.urlBook" download="Book Download Documentation.pdf"> <h2>Link de descarga...</h2></a>
             </div>
             
           </a>
