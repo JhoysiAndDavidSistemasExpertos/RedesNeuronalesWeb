@@ -4,16 +4,27 @@ import { Http } from '@angular/http';
 @Injectable()
 export class ContributionsService {
 
-    themes:any[]=[];
+    public themes:any[];
+    public books:any[];
 
     constructor(private http:Http) { 
-        this.getSobreNosotros();
+        this.getThemes();
     }
 
-    public getSobreNosotros(){
+    public getThemes(){
         this.http.get("https://redesneuroalesweb.firebaseio.com/themes.json").subscribe( 
           (data) =>{
             this.themes = data.json();
+            console.log(data.json());
+          }
+        );
+      }
+
+
+      public getBooks(){
+        this.http.get("https://redesneuroalesweb.firebaseio.com/books.json").subscribe( 
+          (data) =>{
+            this.books = data.json();
             console.log(data.json());
           }
         );
