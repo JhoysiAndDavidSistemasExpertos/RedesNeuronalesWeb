@@ -14,6 +14,7 @@ import { BooksComponent } from './components/contributions/books/books.component
 import { AboutComponent } from './components/about/about.component'
 //services
 import { InformacionService } from './services/informacion.service';
+import { ContributionsService } from './services/contributions.service';
 //rutas
 import { ROUTING } from './app.routing';
 import { DetailThemeComponent } from './components/detail-theme/detail-theme.component';
@@ -38,7 +39,7 @@ import { VideoPipePipe } from './pipes/video-pipe.pipe';
     HttpModule,
     ROUTING
   ],
-  providers: [InformacionService],
+  providers: [InformacionService, ContributionsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

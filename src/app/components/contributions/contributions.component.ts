@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ContributionsService } from '../../services/contributions.service';
 
 @Component({
   selector: 'app-contributions',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContributionsComponent implements OnInit {
 
-  constructor() { }
+  constructor( public contriSer:ContributionsService) {
+
+   }
 
   ngOnInit() {
   }

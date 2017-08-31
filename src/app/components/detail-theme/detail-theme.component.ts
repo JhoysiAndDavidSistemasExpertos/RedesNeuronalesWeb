@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { InformacionService } from '../../services/informacion.service';
 
 @Component({
   selector: 'app-detail-theme',
@@ -8,13 +9,12 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class DetailThemeComponent implements OnInit {
 
-  constructor(private activaR:ActivatedRoute) { }
+  constructor(private activaR:ActivatedRoute, public infoSer:InformacionService) { }
 
   ngOnInit() {
     this.activaR.params.forEach( param =>{
-      console.log(param)
-      console.log(param['id'])
-      console.log(param['iddos'])
+      console.log(param);
+      console.log(param['id']);
     } );
   }
 

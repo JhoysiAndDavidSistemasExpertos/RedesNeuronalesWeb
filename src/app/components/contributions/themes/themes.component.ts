@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer} from '@angular/platform-browser'
+import { InformacionService } from '../../../services/informacion.service';
 
 @Component({
   selector: 'app-themes',
@@ -8,7 +9,9 @@ import { DomSanitizer} from '@angular/platform-browser'
 })
 export class ThemesComponent implements OnInit {
   public urlImage:string;
-  constructor(private _sanitizer:DomSanitizer) {  
+
+  
+  constructor(private _sanitizer:DomSanitizer, public infoSer: InformacionService) {  
     this.urlImage = "assets/img/project-2.jpg"   ;
   }
 
@@ -19,5 +22,7 @@ export class ThemesComponent implements OnInit {
   public sanitizeImage(image: string) {
     return this._sanitizer.bypassSecurityTrustStyle(`url(${image})`);
   }
+
+
 
 }

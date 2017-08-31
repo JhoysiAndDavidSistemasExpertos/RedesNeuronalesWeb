@@ -5,8 +5,10 @@ import { Http } from '@angular/http';
 export class InformacionService {
 
   public info:any = [];
+  public infoThemes:any = [];
   public equipo:any = [];
   public cargadainfo:boolean = false;
+  public cargadainfoThemes:boolean = false;
   public cargadaSobreNosotros:boolean = false;
 
   constructor(private http:Http) { 
