@@ -1,16 +1,15 @@
 
 <section class="ae-container-fluid ae-container-fluid--inner rk-portfolio">
-  <div class="rk-portfolio__items">
+  <div class="rk-portfolio__items" *ngFor="let theme of _contriSer.themes">
 
     
-    <div class="videoCard" style=text-align:center>
+    <div *ngFor="let article of theme.articles" class="videoCard" style=text-align:center>
       <br>
-      <h3>Titulo</h3>
+      <h3>{{ article.title }}</h3>
 
 
-      <iframe width="350" height="200" [src]="video | videoPipe:url " frameborder="0" allowfullscreen></iframe>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque provident nesciunt aut quisquam ad, maiores fugit cumque
-        hic, sit commodi officia. Optio vitae fugiat deserunt inventore ab quis ex nulla.</p>
+      <iframe width="350" height="200" [src]="article.urlVideo | videoPipe:url " frameborder="0" allowfullscreen></iframe>
+
     </div>
 
   
