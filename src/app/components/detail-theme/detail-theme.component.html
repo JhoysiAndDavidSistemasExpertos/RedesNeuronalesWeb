@@ -30,14 +30,18 @@
       
       <div class="ae-grid ae-grid--collapse">
         <div class="ae-grid__item item-lg-6">
-          <img  src="assets/img/inner-1.jpg" alt="Urku Portfolio"></div>
+            <h4 class="ae-u-bolder">{{ article.title }}</h4>            
+            
+          <iframe width="100%" height="200%" [src]="article.urlVideo | videoPipe:url " frameborder="0" allowfullscreen></iframe>          
+        </div>
         <div class="ae-grid__item item-lg-5 item-lg--offset-1 au-lg-ptp-1">
-            <h4 class="ae-u-bolder">Title Video</h4>            
         </div>
       </div>
+      <br><br><br><br>
 
       <div class="ae-grid ae-grid--collapse au-xs-ptp-1">
           <div class="ae-grid__item item-lg-5 au-lg-ptp-1">
+            <br><br><br><br><br><br>
               <h4 class="ae-u-bolder"> {{ article.book.title }}  </h4>              
             <p class="ae-eta"> {{ article.book.description }} </p>
             <h5 class="ae-u-bolder">Descarga el libro para saber mas...</h5>          
@@ -45,7 +49,7 @@
           </div>
           <!-- falta la propiedad imagen al book -->
           <div class="ae-grid__item item-lg-6 item-lg--offset-1"><img *ngIf="_contributionsS.book" [src]="_contributionsS.book.urlImage" alt="Urku Portfolio"></div>
-        </div>
+      </div>
 
 
     </div>

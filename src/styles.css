@@ -15,3 +15,7 @@
 .iframe.centrado{
     display: block;
 }
+
+p{
+    text-align: justify;
+}

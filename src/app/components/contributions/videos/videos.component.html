@@ -2,10 +2,13 @@
 <section class="ae-container-fluid ae-container-fluid--inner rk-portfolio">
   <div class="rk-portfolio__items" *ngFor="let theme of _contriSer.themes">
 
+    <h2>{{ theme.title |uppercase }}</h2>
+    <br><br>
+    
     
     <div *ngFor="let article of theme.articles" class="videoCard" style=text-align:center>
       <br>
-      <h3>{{ article.title }}</h3>
+      <h4>{{ article.title }}</h4>
 
 
       <iframe width="350" height="200" [src]="article.urlVideo | videoPipe:url " frameborder="0" allowfullscreen></iframe>
