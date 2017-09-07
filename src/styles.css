@@ -15,3 +15,11 @@
 .iframe.centrado{
     display: block;
 }
+
+p{
+    text-align: justify;
+}
+.put-to-front{
+    position:relative;
+    z-index:1;
+}

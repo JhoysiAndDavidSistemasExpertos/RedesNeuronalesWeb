@@ -12,9 +12,15 @@ import { DomSanitizer } from '@angular/platform-browser'
 })
 export class DetailThemeComponent implements OnInit {
   public article: any;
-  constructor(private activaR: ActivatedRoute, public infoSer: InformacionService, public _contributionsS: ContributionsService,private _sanitizer:DomSanitizer) { }
+  public url: string;
+  
+  constructor(private activaR: ActivatedRoute, public infoSer: InformacionService, public _contributionsS: ContributionsService,private _sanitizer:DomSanitizer) { 
+    this.url = 'https://www.youtube.com/embed/';
+    
+  }
 
   ngOnInit() {
+    
     this.activaR.params.forEach(param => {
       //recivimos los dos parametros
       console.log(param['idTheme']);
