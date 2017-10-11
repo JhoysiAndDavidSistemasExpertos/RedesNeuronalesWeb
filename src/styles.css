@@ -24,3 +24,12 @@ p{
     position:relative;
     z-index:1;
 }
+
+a{
+    color: black;
+}
+
+.div-hover:hover{
+    background: white;
+    cursor: pointer;
+}

@@ -19,6 +19,7 @@ import { ContributionsService } from './services/contributions.service';
 import { ROUTING } from './app.routing';
 import { DetailThemeComponent } from './components/detail-theme/detail-theme.component';
 import { VideoPipePipe } from './pipes/video-pipe.pipe';
+ import { ExamComponent } from './components/contributions/exam/exam.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +32,8 @@ import { VideoPipePipe } from './pipes/video-pipe.pipe';
     BooksComponent,
     AboutComponent,
     DetailThemeComponent,
-    VideoPipePipe
+    VideoPipePipe,
+    ExamComponent
   ],
   imports: [
     BrowserModule,
