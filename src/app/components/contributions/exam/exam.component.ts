@@ -8,13 +8,16 @@ import { Component, OnInit } from '@angular/core';
 export class ExamComponent implements OnInit {
 
   public exam:any;
+  public titleText:string="TEST UNO";
   
   constructor() { }
 
   ngOnInit() {
   }
-
-  loadExam(indice:number){
-
+  public loadExam(test:string){
+    this.titleText = test;
   }
+  /* loadExam(indice:number){
+
+  } */
 }
