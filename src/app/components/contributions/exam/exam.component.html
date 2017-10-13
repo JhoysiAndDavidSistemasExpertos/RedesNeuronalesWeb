@@ -3,15 +3,15 @@
   <h2>Tests</h2>
 
 
-  <div class="alert alert-primary div-hover" role="alert" (click)='loadExam("TEST UNO")'>
+  <div class="alert alert-primary div-hover" role="alert" (click)='loadExam("TEST UNO Redes Neuronales: Conceptos Básicos y Aplicaciones")'>
     <strong>Test Uno:</strong> "Redes Neuronales: Conceptos Básicos y Aplicaciones"
   </div>
 
-  <div class="alert alert-secondary div-hover" role="alert" (click)='loadExam("TEST DOS")'>
-    <strong>Test Dos:</strong> "Redes Neuronales: Conceptos Básicos y Aplicaciones"
+  <div class="alert alert-secondary div-hover" role="alert" (click)='loadExam("TEST DOS Principios de Redes Neuronales")'>
+    <strong>Test Dos:</strong> "Principios de Redes Neuronales"
   </div>
-  <div class="alert alert-success div-hover" role="alert" (click)='loadExam("TEST TRES")'>
-    <strong>Test Tres:</strong> "Redes Neuronales: Conceptos Básicos y Aplicaciones"
+  <div class="alert alert-success div-hover" role="alert" (click)='loadExam("TEST TRES Aplicaciones de redes neuronales")'>
+    <strong>Test Tres:</strong> "Aplicaciones de redes neuronales"
   </div>
 
 
@@ -19,7 +19,7 @@
 
 <br>
 <div>
-  <h2> {{ titleText }} "Redes Neuronales: Conceptos Básicos y Aplicaciones" </h2>
+  <h2> {{ titleText }} </h2>
   <hr>
   <br>
   <div>
@@ -32,17 +32,17 @@
     <div class="custom-controls-stacked">
 
       <label class="custom-control custom-radio">
-        <input id="radioStacked3" name="radio-stacked" type="radio" class="custom-control-input">
+        <input id="radioStacked1" name="radio-stacked1" type="radio" class="custom-control-input">
         <span class="custom-control-indicator"></span>
         <span class="custom-control-description">Respuesta 1</span>
       </label>
       <label class="custom-control custom-radio">
-        <input id="radioStacked3" name="radio-stacked" type="radio" class="custom-control-input">
+        <input id="radioStacked1" name="radio-stacked1" type="radio" class="custom-control-input">
         <span class="custom-control-indicator"></span>
         <span class="custom-control-description">Respuesta 2</span>
       </label>
       <label class="custom-control custom-radio">
-        <input id="radioStacked3" name="radio-stacked" type="radio" class="custom-control-input">
+        <input id="radioStacked1" name="radio-stacked1" type="radio" class="custom-control-input">
         <span class="custom-control-indicator"></span>
         <span class="custom-control-description">Respuesta 3</span>
       </label>
@@ -64,17 +64,17 @@
     <div class="custom-controls-stacked">
 
       <label class="custom-control custom-radio">
-        <input id="radioStacked3" name="radio-stacked" type="radio" class="custom-control-input">
+        <input id="radioStacked2" name="radio-stacked2" type="radio" class="custom-control-input">
         <span class="custom-control-indicator"></span>
         <span class="custom-control-description">Respuesta 1</span>
       </label>
       <label class="custom-control custom-radio">
-        <input id="radioStacked3" name="radio-stacked" type="radio" class="custom-control-input">
+        <input id="radioStacked2" name="radio-stacked2" type="radio" class="custom-control-input">
         <span class="custom-control-indicator"></span>
         <span class="custom-control-description">Respuesta 2</span>
       </label>
       <label class="custom-control custom-radio">
-        <input id="radioStacked3" name="radio-stacked" type="radio" class="custom-control-input">
+        <input id="radioStacked2" name="radio-stacked2" type="radio" class="custom-control-input">
         <span class="custom-control-indicator"></span>
         <span class="custom-control-description">Respuesta 3</span>
       </label>
@@ -91,17 +91,17 @@
     <div class="custom-controls-stacked">
 
       <label class="custom-control custom-radio">
-        <input id="radioStacked3" name="radio-stacked" type="radio" class="custom-control-input">
+        <input id="radioStacked3" name="radio-stacked3" type="radio" class="custom-control-input">
         <span class="custom-control-indicator"></span>
         <span class="custom-control-description">Respuesta 1</span>
       </label>
       <label class="custom-control custom-radio">
-        <input id="radioStacked3" name="radio-stacked" type="radio" class="custom-control-input">
+        <input id="radioStacked3" name="radio-stacked3" type="radio" class="custom-control-input">
         <span class="custom-control-indicator"></span>
         <span class="custom-control-description">Respuesta 2</span>
       </label>
       <label class="custom-control custom-radio">
-        <input id="radioStacked3" name="radio-stacked" type="radio" class="custom-control-input">
+        <input id="radioStacked3" name="radio-stacked3" type="radio" class="custom-control-input">
         <span class="custom-control-indicator"></span>
         <span class="custom-control-description">Respuesta 3</span>
       </label>
@@ -117,26 +117,36 @@
     <div class="custom-controls-stacked">
 
       <label class="custom-control custom-radio">
-        <input id="radioStacked3" name="radio-stacked" type="radio" class="custom-control-input">
+        <input id="radioStacked4" name="radio-stacked4" type="radio" class="custom-control-input">
         <span class="custom-control-indicator"></span>
         <span class="custom-control-description">Respuesta 1</span>
       </label>
       <label class="custom-control custom-radio">
-        <input id="radioStacked3" name="radio-stacked" type="radio" class="custom-control-input">
+        <input id="radioStacked4" name="radio-stacked4" type="radio" class="custom-control-input">
         <span class="custom-control-indicator"></span>
         <span class="custom-control-description">Respuesta 2</span>
       </label>
       <label class="custom-control custom-radio">
-        <input id="radioStacked3" name="radio-stacked" type="radio" class="custom-control-input">
+        <input id="radioStacked4" name="radio-stacked4" type="radio" class="custom-control-input">
         <span class="custom-control-indicator"></span>
         <span class="custom-control-description">Respuesta 3</span>
       </label>
 
     </div>
   </div>
+
   <hr>
+
+  <div *ngIf="aprobaste">
+    <h2>APROBASTE tu nota es: 90</h2>
+  </div>
+
   <br>
-  <button type="button" class="btn btn-primary large" style="width: 200px">Calificar</button>
+  <button type="button" class="btn btn-primary large" style="width: 200px" (click)="aprobaste = !aprobaste">Calificar</button>
+
+
+
+ 
 
 
 </div>
