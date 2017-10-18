@@ -7,9 +7,11 @@ export class ContributionsService {
     public themes:any[];
     public books:any[];
     public book:any;
+    public tests:any[];
 
     constructor(private http:Http) { 
         this.getThemes();
+        this.getTests();
     }
 
     public getThemes(){
@@ -42,4 +44,14 @@ export class ContributionsService {
           }
         );
       }
+
+      public getTests(){
+        this.http.get("https://redesneuroalesweb.firebaseio.com/exams.json").subscribe(
+            (data)=>{
+                this.tests = data.json();
+                console.log("data tests");
+                console.log(data.json());
+            }
+        )
+    }
 }

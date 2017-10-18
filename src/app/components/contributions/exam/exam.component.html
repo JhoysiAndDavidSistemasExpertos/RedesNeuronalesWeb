@@ -22,117 +22,30 @@
   <h2> {{ titleText }} </h2>
   <hr>
   <br>
-  <div>
+  <div *ngFor="let test of _contributionsService.tests; let idTest = index">
+    <div *ngFor="let question of test.questions; let idTest = index">
 
-    <div class="alert alert-info" role="alert">
-      PREGUNTA UNO
-    </div>
 
-    <!--Poner un ngfor para cargar las 4 respuestas y guardamos en un array con un metodo-->
-    <div class="custom-controls-stacked">
+      <div class="alert alert-info" role="alert">
+        {{ idTest }} {{ question.title }}
+
+      </div>
+
+      <!--Poner un ngfor para cargar las 4 respuestas y guardamos en un array con un metodo-->
+      <div class="custom-controls-stacked" *ngFor="let option of question.answers.options">
 
       <label class="custom-control custom-radio">
         <input id="radioStacked1" name="radio-stacked1" type="radio" class="custom-control-input">
         <span class="custom-control-indicator"></span>
-        <span class="custom-control-description">Respuesta 1</span>
-      </label>
-      <label class="custom-control custom-radio">
-        <input id="radioStacked1" name="radio-stacked1" type="radio" class="custom-control-input">
-        <span class="custom-control-indicator"></span>
-        <span class="custom-control-description">Respuesta 2</span>
-      </label>
-      <label class="custom-control custom-radio">
-        <input id="radioStacked1" name="radio-stacked1" type="radio" class="custom-control-input">
-        <span class="custom-control-indicator"></span>
-        <span class="custom-control-description">Respuesta 3</span>
+        <span class="custom-control-description">{{ option }}</span>
       </label>
 
+
+      </div>
     </div>
 
     <!-- <button type="button" class="btn btn-primary">Siguiente</button> -->
 
-  </div>
-
-
-  <!-- VISTA DE LAS PREGUNTAS ESTATICAMENTE -->
-  <!-- pregunta dos -->
-  <div>
-
-    <div class="alert alert-info" role="alert">
-      PREGUNTA DOS
-    </div>
-    <div class="custom-controls-stacked">
-
-      <label class="custom-control custom-radio">
-        <input id="radioStacked2" name="radio-stacked2" type="radio" class="custom-control-input">
-        <span class="custom-control-indicator"></span>
-        <span class="custom-control-description">Respuesta 1</span>
-      </label>
-      <label class="custom-control custom-radio">
-        <input id="radioStacked2" name="radio-stacked2" type="radio" class="custom-control-input">
-        <span class="custom-control-indicator"></span>
-        <span class="custom-control-description">Respuesta 2</span>
-      </label>
-      <label class="custom-control custom-radio">
-        <input id="radioStacked2" name="radio-stacked2" type="radio" class="custom-control-input">
-        <span class="custom-control-indicator"></span>
-        <span class="custom-control-description">Respuesta 3</span>
-      </label>
-
-    </div>
-
-  </div>
-  <!-- pregunta tres -->
-  <div>
-
-    <div class="alert alert-info" role="alert">
-      PREGUNTA TRES
-    </div>
-    <div class="custom-controls-stacked">
-
-      <label class="custom-control custom-radio">
-        <input id="radioStacked3" name="radio-stacked3" type="radio" class="custom-control-input">
-        <span class="custom-control-indicator"></span>
-        <span class="custom-control-description">Respuesta 1</span>
-      </label>
-      <label class="custom-control custom-radio">
-        <input id="radioStacked3" name="radio-stacked3" type="radio" class="custom-control-input">
-        <span class="custom-control-indicator"></span>
-        <span class="custom-control-description">Respuesta 2</span>
-      </label>
-      <label class="custom-control custom-radio">
-        <input id="radioStacked3" name="radio-stacked3" type="radio" class="custom-control-input">
-        <span class="custom-control-indicator"></span>
-        <span class="custom-control-description">Respuesta 3</span>
-      </label>
-
-    </div>
-  </div>
-  <!-- pregunta 4 -->
-  <div>
-
-    <div class="alert alert-info" role="alert">
-      PREGUNTA CUATRO
-    </div>
-    <div class="custom-controls-stacked">
-
-      <label class="custom-control custom-radio">
-        <input id="radioStacked4" name="radio-stacked4" type="radio" class="custom-control-input">
-        <span class="custom-control-indicator"></span>
-        <span class="custom-control-description">Respuesta 1</span>
-      </label>
-      <label class="custom-control custom-radio">
-        <input id="radioStacked4" name="radio-stacked4" type="radio" class="custom-control-input">
-        <span class="custom-control-indicator"></span>
-        <span class="custom-control-description">Respuesta 2</span>
-      </label>
-      <label class="custom-control custom-radio">
-        <input id="radioStacked4" name="radio-stacked4" type="radio" class="custom-control-input">
-        <span class="custom-control-indicator"></span>
-        <span class="custom-control-description">Respuesta 3</span>
-      </label>
-
-    </div>
   </div>
 
   <hr>
@@ -146,7 +59,7 @@
 
 
 
- 
+
 
 
 </div>
