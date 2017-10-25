@@ -3,14 +3,14 @@
   <h2>Tests</h2>
 
 
-  <div class="alert alert-primary div-hover" role="alert" (click)='loadExam("TEST UNO Redes Neuronales: Conceptos Básicos y Aplicaciones")'>
+  <div class="alert alert-primary div-hover" role="alert" (click)='loadExam(0)'>
     <strong>Test Uno:</strong> "Redes Neuronales: Conceptos Básicos y Aplicaciones"
   </div>
 
-  <div class="alert alert-secondary div-hover" role="alert" (click)='loadExam("TEST DOS Principios de Redes Neuronales")'>
+  <div class="alert alert-secondary div-hover" role="alert" (click)='loadExam(1)'>
     <strong>Test Dos:</strong> "Principios de Redes Neuronales"
   </div>
-  <div class="alert alert-success div-hover" role="alert" (click)='loadExam("TEST TRES Aplicaciones de redes neuronales")'>
+  <div class="alert alert-success div-hover" role="alert" (click)='loadExam(2)'>
     <strong>Test Tres:</strong> "Aplicaciones de redes neuronales"
   </div>
 
@@ -18,36 +18,237 @@
 </div>
 
 <br>
-<div>
+<div *ngIf="showTest">
   <h2> {{ titleText }} </h2>
   <hr>
   <br>
-  <div *ngFor="let test of _contributionsService.tests; let idTest = index">
-    <div *ngFor="let question of test.questions; let idTest = index">
 
+  <!-- /////////////////////////////////////////////// PREGUNTA 1 //////////////////////////////////////////-->
+  <div>
 
       <div class="alert alert-info" role="alert">
-        {{ idTest }} {{ question.title }}
+        {{ listTitleQuestion[0] }}
 
       </div>
 
-      <!--Poner un ngfor para cargar las 4 respuestas y guardamos en un array con un metodo-->
-      <div class="custom-controls-stacked" *ngFor="let option of question.answers.options">
+        <div class="custom-controls-stacked">
+          <label class="custom-control custom-radio">
+            <input id="radioStacked11" name="radio-stacked1" type="radio" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">{{ listOptionsTotal[0][0] }}</span>
+        </label>
+        </div>
 
-      <label class="custom-control custom-radio">
-        <input id="radioStacked1" name="radio-stacked1" type="radio" class="custom-control-input">
-        <span class="custom-control-indicator"></span>
-        <span class="custom-control-description">{{ option }}</span>
-      </label>
 
+        <div class="custom-controls-stacked">
+          <label class="custom-control custom-radio">
+            <input id="radioStacked12" name="radio-stacked1" type="radio" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">{{ listOptionsTotal[0][1] }}</span>
+        </label>
+        </div>
 
-      </div>
-    </div>
+        <div class="custom-controls-stacked">
+          <label class="custom-control custom-radio">
+            <input id="radioStacked13" name="radio-stacked1" type="radio" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">{{ listOptionsTotal[0][2] }}</span>
+        </label>
+        </div>
 
-    <!-- <button type="button" class="btn btn-primary">Siguiente</button> -->
+        <div class="custom-controls-stacked">
+          <label class="custom-control custom-radio">
+            <input id="radioStacked14" name="radio-stacked1" type="radio" class="custom-control-input">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">{{ listOptionsTotal[0][3] }}</span>
+        </label>
+        </div>
 
   </div>
 
+  <!-- /////////////////////////////////////////////// FIN PREGUNTA 1 //////////////////////////////////////////-->
+  
+<!-- /////////////////////////////////////////////// PREGUNTA 2 //////////////////////////////////////////-->
+<div>
+  
+        <div class="alert alert-info" role="alert">
+          {{ listTitleQuestion[1] }}
+  
+        </div>
+  
+          <div class="custom-controls-stacked">
+            <label class="custom-control custom-radio">
+              <input   id="radioStacked21" name="radio-stacked2" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">{{ listOptionsTotal[1][0] }}</span>
+          </label>
+          </div>
+  
+  
+          <div class="custom-controls-stacked">
+            <label class="custom-control custom-radio">
+              <input id="radioStacked22" name="radio-stacked2" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">{{ listOptionsTotal[1][1] }}</span>
+          </label>
+          </div>
+  
+          <div class="custom-controls-stacked">
+            <label class="custom-control custom-radio">
+              <input id="radioStacked23" name="radio-stacked2" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">{{ listOptionsTotal[1][2] }}</span>
+          </label>
+          </div>
+  
+          <div class="custom-controls-stacked">
+            <label class="custom-control custom-radio">
+              <input id="radioStacked24" name="radio-stacked2" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">{{ listOptionsTotal[1][3] }}</span>
+          </label>
+          </div>
+  
+    </div>
+  
+    <!-- /////////////////////////////////////////////// FIN PREGUNTA 2 //////////////////////////////////////////-->
+    
+  <!-- /////////////////////////////////////////////// PREGUNTA 3 //////////////////////////////////////////-->
+  <div>
+    
+          <div class="alert alert-info" role="alert">
+            {{ listTitleQuestion[2] }}
+    
+          </div>
+    
+            <div class="custom-controls-stacked">
+              <label class="custom-control custom-radio">
+                <input id="radioStacked31" name="radio-stacked3" type="radio" class="custom-control-input">
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">{{ listOptionsTotal[2][0] }}</span>
+            </label>
+            </div>
+    
+    
+            <div class="custom-controls-stacked">
+              <label class="custom-control custom-radio">
+                <input id="radioStacked32" name="radio-stacked3" type="radio" class="custom-control-input">
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">{{ listOptionsTotal[2][1] }}</span>
+            </label>
+            </div>
+    
+            <div class="custom-controls-stacked">
+              <label class="custom-control custom-radio">
+                <input id="radioStacked33" name="radio-stacked3" type="radio" class="custom-control-input">
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">{{ listOptionsTotal[2][2] }}</span>
+            </label>
+            </div>
+    
+            <div class="custom-controls-stacked">
+              <label class="custom-control custom-radio">
+                <input id="radioStacked34" name="radio-stacked3" type="radio" class="custom-control-input">
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">{{ listOptionsTotal[2][3] }}</span>
+            </label>
+            </div>
+    
+      </div>
+    
+      <!-- ///////////////////////////////////////////////FIN  PREGUNTA 3 //////////////////////////////////////////-->
+      
+<!-- /////////////////////////////////////////////// PREGUNTA 4 //////////////////////////////////////////-->
+<div>
+  
+        <div class="alert alert-info" role="alert">
+          {{ listTitleQuestion[3] }}
+  
+        </div>
+  
+          <div class="custom-controls-stacked">
+            <label class="custom-control custom-radio">
+              <input id="radioStacked41" name="radio-stacked4" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">{{ listOptionsTotal[3][0] }}</span>
+          </label>
+          </div>
+  
+  
+          <div class="custom-controls-stacked">
+            <label class="custom-control custom-radio">
+              <input id="radioStacked42" name="radio-stacked4" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">{{ listOptionsTotal[3][1] }}</span>
+          </label>
+          </div>
+  
+          <div class="custom-controls-stacked">
+            <label class="custom-control custom-radio">
+              <input id="radioStacked43" name="radio-stacked4" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">{{ listOptionsTotal[3][2] }}</span>
+          </label>
+          </div>
+  
+          <div class="custom-controls-stacked">
+            <label class="custom-control custom-radio">
+              <input id="radioStacked44" name="radio-stacked4" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">{{ listOptionsTotal[3][3] }}</span>
+          </label>
+          </div>
+  
+    </div>
+  
+    <!-- ///////////////////////////////////////////////FIN POR PREGUNTA 4 //////////////////////////////////////////-->
+    
+<!-- /////////////////////////////////////////////// PREGUNTA 5 //////////////////////////////////////////-->
+<div>
+  
+        <div class="alert alert-info" role="alert">
+          {{ listTitleQuestion[4] }}
+  
+        </div>
+  
+          <div class="custom-controls-stacked">
+            <label class="custom-control custom-radio">
+              <input id="radioStacked51" name="radio-stacked5" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">{{ listOptionsTotal[4][0] }}</span>
+          </label>
+          </div>
+  
+  
+          <div class="custom-controls-stacked">
+            <label class="custom-control custom-radio">
+              <input id="radioStacked52" name="radio-stacked5" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">{{ listOptionsTotal[4][1] }}</span>
+          </label>
+          </div>
+  
+          <div class="custom-controls-stacked">
+            <label class="custom-control custom-radio">
+              <input id="radioStacked53" name="radio-stacked5" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">{{ listOptionsTotal[4][2] }}</span>
+          </label>
+          </div>
+  
+          <div class="custom-controls-stacked">
+            <label class="custom-control custom-radio">
+              <input id="radioStacked54" name="radio-stacked5" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">{{ listOptionsTotal[4][3] }}</span>
+          </label>
+          </div>
+  
+    </div>
+  
+    <!-- ///////////////////////////////////////////////FIN PREGUNTA 5//////////////////////////////////////////-->
+    
+        
   <hr>
 
   <div *ngIf="aprobaste">
@@ -55,7 +256,7 @@
   </div>
 
   <br>
-  <button type="button" class="btn btn-primary large" style="width: 200px" (click)="aprobaste = !aprobaste">Calificar</button>
+  <button type="button" class="btn btn-primary large" style="width: 200px" (click)="checkAnswers(radioButon11?.value)">Calificar</button>
 
 
 
