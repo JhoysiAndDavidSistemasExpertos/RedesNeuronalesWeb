@@ -10,63 +10,40 @@ import { ContributionsService } from '../../../services/contributions.service';
 })
 export class ExamComponent implements OnInit {
 
-  public exam: any;
   public titleText: string = "TEST";
-  public aprobaste: boolean = false;
   public showTest: boolean = false;
-  public listOptions: any[];
-  public listOptionsTotal: any[] =[];
-  public listTitleQuestion: string[] = [];
-  public titulo:string = "";
+
+
+  public listTestsDav: any [] ;
+  public testDav :any ;
+  public listQuestions:any [];
 
 
   constructor(public _contributionsService: ContributionsService) {
+    
   }
 
   ngOnInit() {
-    /*if (this._contributionsService.tests == undefined) {
-
-      this._contributionsService.getTests();
-      this.listTest = this._contributionsService.tests;
-
-    }*/
-  }
-  public loadExam(index: number) {
-    this._contributionsService.getTest(index);
-    this._contributionsService.getTests();
-    this.titleText = "CARGANDO...";
-    this.listTitleQuestion = [];
-    this.listOptionsTotal= [];
-    this.listOptions = [];
-    this.showTest =  false;
-
-    setTimeout(() => {
-
-      for (let ind = 0; ind < 5; ind++) {
-
-        //Obtenemos las respuestas de las opciones de cada pregunta
-        this.listOptions = this._contributionsService.tests[index].questions[ind].answers.options;
-        this.listOptionsTotal.push(this.listOptions);
-        this.listOptions = [];
-
-        //obtenemos el titulo de cada pregunta
-        this.titulo = this._contributionsService.test.questions[ind].title;
-        this.listTitleQuestion.push(this.titulo);
-        this.titulo = "";
-      }
-
-      console.log(this.listTitleQuestion);
-      console.log(this.listOptionsTotal);
-      this.titleText = this._contributionsService.test.title;
-      this.showTest = true;
-
-
-    }, 1000);
-
-
-
+    this._contributionsService.getTestsDav().subscribe( (data) =>{
+      this.listTestsDav = data.json();
+      console.log("this.listTestsDav");
+      console.log(this.listTestsDav);
+    });
   }
 
+
+
+public loadExamDav(index:number){
+  this.titleText = "Cargando . . .";
+  if(this.listTestsDav){
+    this.testDav = this.listTestsDav[index];
+    this.titleText = this.listTestsDav[index].title;
+    this.listQuestions = this.testDav.questions;
+    this.showTest = true;
+  }
+}
+
+  
 
   ///////Dede aqui estoy intentando  tampoco da mandando el valor de la linea 529 en el html donde esta el clicks
   public checkAnswers(value: any) {

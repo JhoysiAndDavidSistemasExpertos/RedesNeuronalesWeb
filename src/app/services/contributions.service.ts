@@ -48,15 +48,20 @@ export class ContributionsService {
   }
 
   public getTests() {
-    this.http.get("https://redesneuroalesweb.firebaseio.com/exams.json").subscribe(
+   this.http.get("https://redesneuroalesweb.firebaseio.com/exams.json").subscribe(
       (data) => {
         this.tests = data.json();
         console.log("data tests");
         console.log(this.tests);
+        return this.tests;
       }
     );
   }
 
+
+  public getTestsDav() {
+    return this.http.get("https://redesneuroalesweb.firebaseio.com/exams.json");
+   }
 
   public getTest(idTest: number) {
     this.http.get(`https://redesneuroalesweb.firebaseio.com/exams/${idTest}.json`).subscribe(
