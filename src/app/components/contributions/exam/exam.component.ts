@@ -41,6 +41,8 @@ public loadExamDav(index:number){
     this.listQuestions = this.testDav.questions;
     this.showTest = true;
   }
+  console.log("this.listQuestions");
+  console.log(this.listQuestions);
 }
 
   
