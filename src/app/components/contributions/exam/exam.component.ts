@@ -1,3 +1,4 @@
+import { count } from 'rxjs/operator/count';
 import { forkJoin } from 'rxjs/observable/forkJoin';
 import { forEach } from '@angular/router/src/utils/collection';
 import { Component, OnInit } from '@angular/core';
@@ -18,7 +19,8 @@ export class ExamComponent implements OnInit {
   public testDav: any;
   public listQuestions: any[];
   public listRespuestasSeleccionadas: number[] = [-1, -1, -1, -1, -1];
-  public listaRespuestasCorrectas:number[] = [-2,-2,-2,-2,-2] ;
+  public listaRespuestasCorrectas: number[] = [-2, -2, -2, -2, -2];
+  public messageNota:string;
 
   constructor(public _contributionsService: ContributionsService) { }
   ngOnInit() {
@@ -35,8 +37,8 @@ export class ExamComponent implements OnInit {
       this.titleText = this.listTestsDav[index].title;
       this.listQuestions = this.testDav.questions;
       this.showTest = true;
-      
-      for(let i =0 ; i< this.listQuestions.length ; i++){
+
+      for (let i = 0; i < this.listQuestions.length; i++) {
 
         this.listaRespuestasCorrectas[i] = this.listQuestions[i].answers.successful;
       }
@@ -54,17 +56,32 @@ export class ExamComponent implements OnInit {
   public getCalificacion() {
     console.log("RESPUESTAS SELECCIONADAS");
 
-    for(let i = 0; i < this.listRespuestasSeleccionadas.length ; i++){
+    for (let i = 0; i < this.listRespuestasSeleccionadas.length; i++) {
 
       console.log(this.listRespuestasSeleccionadas[i]);
     }
 
     console.log("RESPUESTAS CORRECTAS");
-    
-        for(let i = 0; i < this.listaRespuestasCorrectas.length ; i++){
-    
-          console.log(this.listaRespuestasCorrectas[i]);
-        }
+
+    for (let i = 0; i < this.listaRespuestasCorrectas.length; i++) {
+
+      console.log(this.listaRespuestasCorrectas[i]);
+    }
+
+    let count = 0;
+    for (let i = 0; i < this.listaRespuestasCorrectas.length; i++) {
+      if (this.listRespuestasSeleccionadas[i] == this.listaRespuestasCorrectas[i]) {
+        count++;
+      }
+    }
+    console.log("COUNT");    
+    console.log(count);
+    count = count*20;
+    if(count<60){
+      this.messageNota = "REPROBASTE TU NOTA ES: "+count;
+    }else{
+      this.messageNota = "APROBASTE TU NOTA ES: "+count;
+    }
 
   }
 }
