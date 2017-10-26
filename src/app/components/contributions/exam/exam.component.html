@@ -38,12 +38,12 @@
 
     </div>
 
-    <div *ngFor="let option of listQuestions[0].answers.options">
+    <div *ngFor="let option of listQuestions[0].answers.options; let i = index">
       <!-- <h5> {{ option }} </h5> -->
 
       <div class="custom-controls-stacked">
         <label class="custom-control custom-radio">
-          <input id="radioStacked11" name="radio-stacked1" type="radio" class="custom-control-input">
+          <input  type="radio" class="custom-control-input" (click)="checkAnswers(0 , i)">
           <span class="custom-control-indicator"></span>
           <span class="custom-control-description">{{ option }}</span>
         </label>
@@ -64,12 +64,12 @@
 
     </div>
 
-    <div *ngFor="let option of listQuestions[1].answers.options">
+    <div *ngFor="let option of listQuestions[1].answers.options; let i = index">
       <!-- <h5> {{ option }} </h5> -->
 
       <div class="custom-controls-stacked">
         <label class="custom-control custom-radio">
-          <input id="radioStacked11" name="radio-stacked1" type="radio" class="custom-control-input">
+          <input  type="radio" class="custom-control-input" (click)="checkAnswers(1 , i)">
           <span class="custom-control-indicator"></span>
           <span class="custom-control-description">{{ option }}</span>
         </label>
@@ -89,12 +89,12 @@
 
     </div>
 
-    <div *ngFor="let option of listQuestions[2].answers.options">
+    <div *ngFor="let option of listQuestions[2].answers.options; let i = index">
       <!-- <h5> {{ option }} </h5> -->
 
       <div class="custom-controls-stacked">
         <label class="custom-control custom-radio">
-          <input id="radioStacked11" name="radio-stacked1" type="radio" class="custom-control-input">
+          <input  type="radio" class="custom-control-input" (click)="checkAnswers(2 , i)">
           <span class="custom-control-indicator"></span>
           <span class="custom-control-description">{{ option }}</span>
         </label>
@@ -114,12 +114,12 @@
 
     </div>
 
-    <div *ngFor="let option of listQuestions[3].answers.options">
+    <div *ngFor="let option of listQuestions[3].answers.options; let i = index">
       <!-- <h5> {{ option }} </h5> -->
 
       <div class="custom-controls-stacked">
         <label class="custom-control custom-radio">
-          <input id="radioStacked11" name="radio-stacked1" type="radio" class="custom-control-input">
+          <input  type="radio" class="custom-control-input" (click)="checkAnswers(3 , i)">
           <span class="custom-control-indicator"></span>
           <span class="custom-control-description">{{ option }}</span>
         </label>
@@ -138,12 +138,12 @@
       {{ listQuestions[4].title }}
     </div>
 
-    <div *ngFor="let option of listQuestions[4].answers.options">
+    <div *ngFor="let option of listQuestions[4].answers.options; let i = index">
       <!-- <h5> {{ option }} </h5> -->
 
       <div class="custom-controls-stacked">
         <label class="custom-control custom-radio">
-          <input id="radioStacked11" name="radio-stacked1" type="radio" class="custom-control-input">
+          <input  type="radio" class="custom-control-input" (click)="checkAnswers(4 , i)">
           <span class="custom-control-indicator"></span>
           <span class="custom-control-description">{{ option }}</span>
         </label>
@@ -163,7 +163,7 @@
   </div>
 
   <br>
-  <button type="button" class="btn btn-primary large" style="width: 200px" (click)="checkAnswers(radioButon11?.value)">Calificar</button>
+  <button type="button" class="btn btn-primary large" style="width: 200px" (click)="getCalificacion()">Calificar</button>
 
 
 
