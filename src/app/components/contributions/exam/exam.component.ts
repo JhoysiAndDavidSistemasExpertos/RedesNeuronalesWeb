@@ -74,7 +74,7 @@ export class ExamComponent implements OnInit {
         count++;
       }
     }
-    console.log("COUNT");    
+    console.log("RES ACERTADOS");    
     console.log(count);
     count = count*20;
     if(count<60){
